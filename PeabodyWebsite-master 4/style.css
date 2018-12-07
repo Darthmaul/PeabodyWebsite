@@ -1,0 +1,118 @@
+/* Coded by Andrew Nolan :-) */
+
+body {
+    font-family: 'Oxygen', sans-serif;
+}
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+  
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+header .container {
+    position: relative;
+    z-index: 2;
+  }
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('assets/Film-set.jpg') black no-repeat center center scroll;
+    }
+    header video {
+        display: none;
+    }
+}
+
+.navbar-dark {
+    background-color: #000;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link {
+    color: #a08e5a;
+}
+.btn-peabody {
+    background-color: #a08e5a;
+    border: none;
+}
+
+.btn-peabody:hover {
+    background-color: #f8f9fa;
+    border: none;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.body-section {
+    padding: 50px 20px;
+}
+
+.body-section h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #a08e5a;
+}
+
+.theme-row {
+    background: #a08e5a;
+    color: #fff;
+}
+
+.theme-row h2 {
+    color: #fff;
+}
+.inner-section {
+    padding: 0 20px 50px 20px;
+}
+
+.dark-row {
+    background: #000;
+    color: #fff;
+}
+.dark-row h2 {
+    color: #b9a66b;
+}
+
+.row.title {
+    padding: 50px 20px 0px 20px;
+    color: #a08e5a;
+}
+
+.row.title-2 {
+    padding: 50px 20px 30px 20px;
+    color: #a08e5a;
+}
+
+.row {
+    margin-right: 0;
+}
